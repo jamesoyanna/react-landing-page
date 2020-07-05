@@ -1,5 +1,6 @@
 This project is a landing page built with react.
 
+ You can view the landing page here- https://naija-landing-page.netlify.app/
 ## Available Scripts
 
 In the project directory, you can run:
