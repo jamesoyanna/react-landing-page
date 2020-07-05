@@ -43,7 +43,7 @@ const FeaturesTiles = ({
   );
 
   const sectionHeader = {
-    title: "Nigeria's leading technology",
+    title: "Nigeria's leading technology company",
     paragraph:
       "Solving high-impact problem with technology. Changing lifestyle and business culture in Nigeria.",
   };
