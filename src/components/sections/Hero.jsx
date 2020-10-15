@@ -5,6 +5,7 @@ import ButtonGroup from "../elements/ButtonGroup";
 import Button from "../elements/Button";
 import Image from "../elements/Image";
 import Modal from "../elements/Modal";
+import tawkTo from "tawkto-react";
 
 const propTypes = {
   ...SectionProps.types,
@@ -24,17 +25,14 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+  //Tawk chat
+  //const tawkTo = require("tawkto-react");
 
-//Tawk chat
-const tawkTo = require("tawkto-react");
+  const tawkToPropertyId = "5f8768e62901b9207693807c";
 
-const tawkToPropertyId = "5f8768e62901b9207693807c";
-
-useEffect(() => {
-  tawkTo(tawkToPropertyId);
-}, []);
-
-
+  useEffect(() => {
+    tawkTo(tawkToPropertyId);
+  }, []);
 
   const [videoModalActive, setVideomodalactive] = useState(false);
 
