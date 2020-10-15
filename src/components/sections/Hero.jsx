@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState } from "react";
 import classNames from "classnames";
 import { SectionProps } from "../../utils/SectionProps";
 import ButtonGroup from "../elements/ButtonGroup";
@@ -24,6 +24,18 @@ const Hero = ({
   invertColor,
   ...props
 }) => {
+
+//Tawk chat
+const tawkTo = require("tawkto-react");
+
+const tawkToPropertyId = "5f8768e62901b9207693807c";
+
+useEffect(() => {
+  tawkTo(tawkToPropertyId);
+}, []);
+
+
+
   const [videoModalActive, setVideomodalactive] = useState(false);
 
   const openModal = (e) => {
